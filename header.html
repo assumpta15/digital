@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: "Playfair Display";
+  letter-spacing: 5px; */
+  background: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: auto;
+     margin-top: 20px; 
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.buttons .register{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background: #333;
+    color: black;
+    font-size: bold;
+    width:80px;
+}
+.buttons a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.buttons .login{
+    border: none;
+    background: #333;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    gap: 5px;
+    margin-left: 20px;
+}
+nav ul li a:hover{
+    background-color: green;
+}
+.buttons .register :hover{
+    background: green;
+
+}
+
+/* HEADER */
+
+header{
+    background: #f5f5f5;
+    
+            
+             position: fixed;  
+            color: grey;
+            /* top: 0; */
+            /* margin-top: 20px; */
+            width: 100%;
+}
+
+.menu img{
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+    width: 50px;
+    height: 40px;
+}
+.menu-item{
+    z-index: 10;
+}
+.homesection a{
+    text-decoration: none;
+    margin-right: 250px;
+    font-weight: bold;
+    color: grey;
+    font-size: 30px;
+
+}
+
+.welcome{
+    margin-top: 200px;
+    text-align: center;
+    color: grey;
+    align-content: center;
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+         <nav>
+            <div class="menu">
+                <img src="image/menu.svg" alt="">
+            </div>
+            <!-- <div class="menu-item">
+                <ul>
+                    <li><a href="about.php">About</a></li>
+                    <br>
+                    <br>
+                    <li><a href="menu.php">Food</a></li>
+                </ul>
+            </div> -->
+    
+            <div class="homesection">
+                <a href="index.php">Gourmet au Catering</a>
+            </div>
+    
+            <ul>
+                <li><a href="about.php">About</a></li>
+                <li><a href="menu.php">Menu</a></li>
+               
+            </ul>
+    
+            <div class="buttons">
+                    <button class="register" > <a href="register.php">Register</a></button>
+                    <button class="login"> <a href="login.php">Login</a> </button>
+                </div>
+        </nav>
+        
+
+
+    </header>
+
+    <!-- main -->
+
+    <!-- <main>
+        <div class="welcome">
+            <p style="font-size: 20px;">Welcome to <b style="font-size: 35px;">Gourmet au Catering</b></p> 
+
+        </div>
+        
+    </main>
+
+
+ -->
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script>
+
+$('document').ready(()=>{
+            $('.menu').click(()=>{
+                $('.menu-item').toggle(100)
+                
+                });
+
+                
+
+                $('.fadetoggle').on({
+                    mouseenter:(e)=>{$(e.target).fadeOut(1000)},
+                    mouseleave:(e)=>{$(e.target).fadeIn(4000)}
+                });
+
+            })
+        </script> -->
+
+
+        <script>
+            function menu() {
+            document.querySelector(".menu").style.display = "block";
+            
+        }
+        function menu(){
+            document.querySelector(".menu").style.display = "none";
+
+        }
+        </script>
+</body>
+</html>
